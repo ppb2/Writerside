@@ -18,6 +18,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Download file
+        run: wget https://example.com/path/to/webHelpHI2-all.zip
+      - name: List files after download (optional, for debugging)
+        run: ls -al
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
@@ -63,6 +67,8 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: docs
+      - name: Unzip file
+        run: unzip -O UTF-8 -qq 'webHelpHI2-all.zip' -d dir
 
       - name: Unzip artifact
         run: unzip -O UTF-8 -qq '${{ env.ARTIFACT }}' -d dir
