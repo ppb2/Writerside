@@ -18,10 +18,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Download file
-        run: wget https://example.com/path/to/webHelpHI2-all.zip
-      - name: List files after download (optional, for debugging)
-        run: ls -al
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
