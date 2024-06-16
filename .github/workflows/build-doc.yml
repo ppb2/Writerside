@@ -62,6 +62,7 @@ jobs:
       - name: Download artifacts
         uses: actions/download-artifact@v4
         with:
+          enablement: true
           name: docs
       - name: Unzip file
         run: unzip -O UTF-8 -o -qq 'webHelpIN2-all.zip' -d dir
