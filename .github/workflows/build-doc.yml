@@ -64,10 +64,10 @@ jobs:
         with:
           name: docs
       - name: Unzip file
-        run: unzip -O UTF-8 -qq 'webHelpIN2-all.zip' -d dir
+        run: unzip -O UTF-8 -o -qq 'webHelpIN2-all.zip' -d dir
 
       - name: Unzip artifact
-        run: unzip -O UTF-8 -qq '${{ env.ARTIFACT }}' -d dir
+        run: unzip -O UTF-8 -o -qq '${{ env.ARTIFACT }}' -d dir
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
