@@ -293,13 +293,3 @@ Order ||--o{ Payment : "支付"
 
 
 ```
-```rest
-### Shop 相关接口
-
-#### 获取所有商店
-- **URL**: `/api/shops`
-- **Method**: `GET`
-- **Description**: 获取所有商店的信息。
-- **Response**:
-
-```

@@ -6,5 +6,6 @@
                  name="Instance Name"
                  start-page="starter.md">
 
+    <toc-element topic="MESI协议.md"/>
     <toc-element topic="starter.md"/>
 </instance-profile>
