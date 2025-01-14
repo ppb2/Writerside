@@ -3,9 +3,12 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
 <instance-profile id="in"
-                 name="Instance Name"
-                 start-page="starter.md">
+                  name="Instance Name"
+                  start-page="starter.md">
 
+    <toc-element topic="starter.md">
+
+    </toc-element>
     <toc-element topic="MESI协议.md"/>
-    <toc-element topic="starter.md"/>
+
 </instance-profile>
